@@ -1,156 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Overlake School — Redmond, WA</title>
-  <style>
-    /* Basic reset + simple grid / layout */
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-    header, nav, main, footer { padding: 0 2rem; }
-    a { color: #005500; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    <title>The Overlake School - Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
 
-    header { background: #f8f8f8; border-bottom: 1px solid #ddd; }
-    header .top-nav { display: flex; justify-content: space-between; align-items: center; height: 60px; }
-    header .top-nav .logo { font-size: 1.5rem; font-weight: bold; }
-    header .top-nav nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1rem; }
+        #header {
+            background: #083c0c;
+            color: white;
+            padding: 20px;
+        }
 
-    .hero { background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat; color: white; padding: 4rem 2rem; text-align: center; }
-    .hero h1 { font-size: 3rem; margin-bottom: 0.5rem; }
-    .hero p { font-size: 1.25rem; }
+        #header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
 
-    .section { padding: 3rem 0; border-bottom: 1px solid #eee; }
-    .section h2 { margin-top: 0; }
-    .grid-3 { display: flex; flex-wrap: wrap; gap: 2rem; }
-    .grid-3 .col { flex: 1; min-width: 200px; }
+        #nav {
+            background: #e6e6e6;
+            padding: 10px;
+        }
 
-    footer { background: #f1f1f1; text-align: center; padding: 2rem 0; font-size: 0.9rem; color: #666; }
-  </style>
+        #nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        #nav ul li a {
+            text-decoration: none;
+            color: #083c0c;
+            font-weight: bold;
+        }
+
+        #main {
+            padding: 20px;
+            background: white;
+            min-height: 400px;
+        }
+
+        h2 {
+            color: #083c0c;
+        }
+
+        #footer {
+            background: #083c0c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <header>
-    <div class="top-nav">
-      <div class="logo">
-        Overlake School
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#academics">Academics</a></li>
-          <li><a href="#arts">Arts</a></li>
-          <li><a href="#admission">Admissions</a></li>
-          <li><a href="#visit">Visit</a></li>
-          <li><a href="#giving">Give</a></li>
-        </ul>
-      </nav>
+    <div id="header">
+        <h1>The Overlake School</h1>
+        <p>Redmond, Washington • Independent • Grades 5–12</p>
     </div>
-  </header>
 
-  <section class="hero">
-    <h1>The Overlake School</h1>
-    <p>Championing students and their vast potential through engaging educational experiences</p>
-  </section>
+    <div id="nav">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#arts">Arts</a></li>
+            <li><a href="#athletics">Athletics</a></li>
+            <li><a href="#admission">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
-  <main>
-    <!-- About -->
-    <section id="about" class="section">
-      <h2>About Overlake</h2>
-      <p>The Overlake School, founded in 1967, is an independent, nonsectarian, coeducational, college-preparatory day school located in Redmond, Washington. :contentReference[oaicite:0]{index=0}</p>
-      <p>Our mission: “The Overlake School champions students and their vast potential through engaging educational experiences in a diverse and inclusive community.” :contentReference[oaicite:1]{index=1}</p>
-      <div class="grid-3">
-        <div class="col">
-          <h3>Quick Facts</h3>
-          <ul>
-            <li>Grades: 5-12 :contentReference[oaicite:2]{index=2}</li>
-            <li>Student-teacher ratio: ~7:1 :contentReference[oaicite:3]{index=3}</li>
-            <li>Accredited: NW Association of Independent Schools and more :contentReference[oaicite:4]{index=4}</li>
-          </ul>
-        </div>
-        <div class="col">
-          <h3>Values & Vision</h3>
-          <p>Our values — Compassion, Curiosity, Integrity, Inclusion & Equity, Mutual Respect — guide our community. :contentReference[oaicite:5]{index=5}</p>
-        </div>
-        <div class="col">
-          <h3>Campus</h3>
-          <p>Set on 73 acres of forest, pasture, and wetland in Redmond — a natural retreat that supports reflection and learning. :contentReference[oaicite:6]{index=6}</p>
-        </div>
-      </div>
-    </section>
+    <div id="main">
+        <h2 id="about">About Overlake</h2>
+        <p>
+            Founded in 1967, The Overlake School is an independent,
+            nonsectarian, coeducational day school located on a 73-acre campus in Redmond, WA.
+            Overlake’s mission is to champion students and their vast potential through
+            engaging educational experiences in a diverse and inclusive community.
+        </p>
 
-    <!-- Academics -->
-    <section id="academics" class="section">
-      <h2>Academics</h2>
-      <p>The Overlake curriculum emphasizes rigorous academics, student-centered learning, and experiential education. :contentReference[oaicite:7]{index=7}</p>
-      <div class="grid-3">
-        <div class="col">
-          <h3>Advanced Opportunities</h3>
-          <p>Overlake offers 17 AP courses and honors courses across multiple disciplines. :contentReference[oaicite:8]{index=8}</p>
-        </div>
-        <div class="col">
-          <h3>Languages</h3>
-          <p>Students can study Mandarin, French, Latin, and Spanish. :contentReference[oaicite:9]{index=9}</p>
-        </div>
-        <div class="col">
-          <h3>Experiential Learning</h3>
-          <p>Through Project Week, outdoor education, and service learning, students apply their learning in real-world contexts. :contentReference[oaicite:10]{index=10}</p>
-        </div>
-      </div>
-    </section>
+        <h2 id="academics">Academics</h2>
+        <p>
+            Overlake offers a rigorous college-preparatory program with small class sizes,
+            17 AP and honors courses, and a strong emphasis on experiential education,
+            critical thinking, and student-centered learning.
+        </p>
 
-    <!-- Arts -->
-    <section id="arts" class="section">
-      <h2>Performing & Visual Arts</h2>
-      <p>At Overlake, arts are a core part of the student experience — from studio art and photography to band, choir, theater, and technical theater. :contentReference[oaicite:11]{index=11}</p>
-      <div class="grid-3">
-        <div class="col">
-          <h3>Music</h3>
-          <p>Band, orchestra, choir, and more, with performances and state-level competitions. :contentReference[oaicite:12]{index=12}</p>
-        </div>
-        <div class="col">
-          <h3>Theater & Stagecraft</h3>
-          <p>Students can act, design sets, run lights/sound, and produce plays. :contentReference[oaicite:13]{index=13}</p>
-        </div>
-        <div class="col">
-          <h3>Studio Arts</h3>
-          <p>Drawing, painting, sculpture, photography, graphic design — and an outdoor gallery on campus. :contentReference[oaicite:14]{index=14}</p>
-        </div>
-      </div>
-    </section>
+        <h2 id="arts">Arts at Overlake</h2>
+        <p>
+            Students explore visual arts, theater, stagecraft, music, digital design, and
+            more. The arts program encourages creativity, collaboration, and community expression.
+        </p>
 
-    <!-- Admissions -->
-    <section id="admission" class="section">
-      <h2>Admissions</h2>
-      <p>We welcome prospective families to apply, tour our campus, and explore the Overlake experience. :contentReference[oaicite:15]{index=15}</p>
-      <p><strong>Tuition (2025–26):</strong> $48,489, with financial aid available. :contentReference[oaicite:16]{index=16}</p>
-      <p><a href="https://www.overlake.org/admission">Learn more about applying</a></p>
-    </section>
+        <h2 id="athletics">Athletics</h2>
+        <p>
+            Overlake supports a robust athletics program including soccer, basketball, cross-country,
+            tennis, volleyball, track and field, and more. Athletics foster teamwork, resilience,
+            and school spirit.
+        </p>
 
-    <!-- Visit -->
-    <section id="visit" class="section">
-      <h2>Visit Us</h2>
-      <p>We invite you to tour our 73-acre campus in Redmond. :contentReference[oaicite:17]{index=17}</p>
-      <address>
-        The Overlake School<br />
-        20301 NE 108th Street<br />
-        Redmond, WA 98053<br />
-        Phone: 425-868-1000 :contentReference[oaicite:18]{index=18}
-      </address>
-    </section>
+        <h2 id="admission">Admissions</h2>
+        <p>
+            Overlake welcomes applications from families seeking a supportive, challenging,
+            and inclusive learning environment. Tuition assistance and financial aid are available.
+        </p>
 
-    <!-- Giving -->
-    <section id="giving" class="section">
-      <h2>Support Overlake</h2>
-      <p>The Overlake Fund supports academics, arts, athletics, and experiential programs. Your gift makes an immediate difference. :contentReference[oaicite:19]{index=19}</p>
-      <p><a href="https://www.overlake.org/support/giving/overlake">Give to Overlake</a></p>
-    </section>
-  </main>
+        <h2 id="contact">Contact</h2>
+        <p>
+            The Overlake School<br>
+            20301 NE 108th Street<br>
+            Redmond, WA 98053<br>
+            Phone: 425-868-1000
+        </p>
+    </div>
 
-  <footer>
-    <p>© The Overlake School — Redmond, WA</p>
-    <p><a href="https://www.overlake.org/privacy">Privacy Policy</a> | <a href="https://www.overlake.org/terms">Terms of Use</a></p>
-  </footer>
+    <div id="footer">
+        <p>&copy; 2025 The Overlake School. All Rights Reserved.</p>
+    </div>
 
 </body>
 </html>
